@@ -1,0 +1,77 @@
+.image-container {
+  position: relative;
+}
+
+.robot-image {
+  position: absolute;
+  top: -66px;
+  left: 323px;
+  width: 135px;
+}
+
+.sparkle-image {
+  position: absolute;
+  top: -66px;
+  right: 320px;
+  width: 100px;
+  z-index: 100;
+}
+
+.line-short-left {
+  position: absolute;
+  left: 0;
+  top: 200px;
+}
+
+.lines-long {
+  position: absolute;
+  left: 0;
+  bottom: -17px;
+}
+
+.line-right {
+  position: absolute;
+  right: 0;
+  top: 120px;
+}
+
+.lines-short-right {
+  position: absolute;
+  right: 0;
+  bottom: -17px;
+}
+
+@media (min-width: 768px) and (max-width: 1250px) {
+  .robot-image {
+    position: absolute;
+    top: -66px;
+    left: 64px;
+    width: 125px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1250px) {
+  .sparkle-image {
+    position: absolute;
+    top: -66px;
+    right: 105px;
+    width: 105px;
+  }
+}
+
+@media (max-width: 768px) {
+  .robot-image,
+  .sparkle-image,
+  .line-short-left,
+  .lines-long,
+  .line-right,
+  .lines-short-right {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .responsive {
+    min-height: 100vh;
+    padding: 0;
+  }
+}

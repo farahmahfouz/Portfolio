@@ -1,0 +1,46 @@
+.background {
+    background: linear-gradient(to right, #ad2fca, #52efe7);
+    border-radius: 6px;
+    padding: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+section {
+  position: relative;
+}
+
+.bg-circle::before,
+.bg-circle::after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: linear-gradient(
+    to left,
+    rgba(29, 99, 111, 0.7) 60%,
+    rgba(86, 64, 231, 0.6) 60%,
+    rgba(64, 206, 231, 0.5) 60%,
+    rgba(243, 40, 240, 0.781) 60%
+  );
+  filter: blur(80px);
+  z-index: 1;
+}
+
+.bg-circle::before {
+  top: 15%;
+  left: 15%;
+}
+
+.bg-circle::after {
+  bottom: 60%;
+  right: -95%;
+}
+
+@media (max-width: 768px) {
+  .bg-circle::after {
+    bottom: 55%;
+    right: 20%;
+  }
+}

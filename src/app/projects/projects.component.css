@@ -1,0 +1,7 @@
+.background {
+    background: linear-gradient(to right, #ad2fca, #52efe7);
+    border-radius: 6px;
+    padding: 15px;
+    font-weight: bold;
+    color: white;
+}
